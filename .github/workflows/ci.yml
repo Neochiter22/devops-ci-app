@@ -1,4 +1,4 @@
-name: CI — verify and publish image
+name: CI вЂ” verify and publish image
 
 on:
   push:
@@ -60,6 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
